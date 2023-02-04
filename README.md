@@ -1,4 +1,4 @@
-# AI NFT Generator
+# SmartNFT
 
 ## Technology Stack & Tools
 
