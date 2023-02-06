@@ -3,6 +3,10 @@ import { NFTStorage, File } from 'nft.storage'
 import { Buffer } from 'buffer';
 import { ethers } from 'ethers';
 import axios from 'axios';
+import bgimg from "./images/imagenft.jpg"
+import bgimg1 from "./images/img1.png"
+import bgimg2 from "./images/img2.avif"
+import bgimg3 from "./images/img3.jpg"
 
 // Components
 import Spinner from 'react-bootstrap/Spinner';
@@ -153,6 +157,15 @@ function App() {
           View&nbsp;<a href={url} target="_blank" rel="noreferrer">Metadata</a>
         </p>
       )}
+      <div>
+
+        <img src={bgimg}  alt="" />
+        <img src={bgimg1}  alt="" />
+        <img src={bgimg2}  alt="" />
+        <img src={bgimg3}  alt="" />
+
+       
+      </div>
     </div>
   );
 }
