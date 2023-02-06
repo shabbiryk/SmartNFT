@@ -115,7 +115,7 @@ function App() {
     setMessage("Waiting for Mint...")
 
     const signer = await provider.getSigner()
-    const transaction = await nft.connect(signer).mint(tokenURI, { value: ethers.utils.parseUnits("1", "ether") })
+    const transaction = await nft.connect(signer).mint(tokenURI, { value: ethers.utils.parseUnits("0.1", "ether") })
     await transaction.wait()
   }
 
@@ -149,7 +149,7 @@ function App() {
       </div>
 
       {!isWaiting && url && (
-        <p>
+        <p >
           View&nbsp;<a href={url} target="_blank" rel="noreferrer">Metadata</a>
         </p>
       )}
